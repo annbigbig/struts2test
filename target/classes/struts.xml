@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true"></constant>
+<constant name="struts.convention.result.path" value="/"></constant>
+<package name="tutorial" namespace="/tutorial" extends="struts-default">
+    
+    <action name="userInput">
+    	<result>/tutorial/userInput.jsp</result>
+    </action>
+    
+    <action name="quiz" class="com.kashu.action.QuizAction">
+    	<result name="success">/tutorial/success.jsp</result>
+    	<result name="input">/tutorial/userInput.jsp</result>
+    </action>
+    
+</package>
+ 
+</struts>
