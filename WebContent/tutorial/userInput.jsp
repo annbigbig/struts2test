@@ -21,7 +21,7 @@
  
             <p/>
  
-            <s:form action="quiz" method="post">
+            <s:form namespace="/tutorial" action="quiz" method="post">
                 <s:textfield label="Name" name="name"/>
                 <s:textfield label="Age" name="age"/>
                 <s:textfield label="Favorite color" name="answer"/>
