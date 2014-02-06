@@ -19,4 +19,14 @@
     
 </package>
  
+<package name="clientValidation" namespace="/client" extends="struts-default">
+	<action name="userInput">
+		<result>/client/userInput.jsp</result>
+	</action>
+	<action name="quiz" class="com.kashu.action.client.QuizAction">
+		<result name="success">/client/success.jsp</result>
+    	<result name="input">/client/userInput.jsp</result>
+	</action>
+</package> 
+ 
 </struts>

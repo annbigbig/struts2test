@@ -9,6 +9,7 @@
 <body>
 	你好我是<%=request.getRequestURI()%><br/>
 	<br/>
-	<a href="<%=request.getContextPath()%>/tutorial/userInput.action">按我進入表單頁</a>
+	<a href="<%=request.getContextPath()%>/tutorial/userInput.action">按我進入表單頁(Basic Validation示例)</a><br/>
+	<a href="<%=request.getContextPath()%>/client/userInput.action">按我進入表單頁(Client-side Validation示例)</a><br/>
 </body>
 </html>

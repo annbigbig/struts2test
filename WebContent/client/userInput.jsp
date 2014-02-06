@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><%=request.getRequestURI()%></title>
+<s:head/>
 </head>
 <body>
  
@@ -16,12 +17,7 @@
     <div class="row-fluid">
         <div class="span12">
  
-            <p>
-                <b>What is your favorite color?</b>
- 
-            <p/>
- 
-            <s:form namespace="/tutorial" action="quiz" method="post">
+            <s:form namespace="/client" action="quiz" method="post" validate="true">
                 <s:textfield label="Name" name="name"/>
                 <s:textfield label="Age" name="age"/>
                 <s:textfield label="Favorite color" name="answer"/>
